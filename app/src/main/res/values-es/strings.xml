@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FCB Quiz App</string>
+    <string name="welcome">Bienvenido al cuestionario del FCB</string>
+    <string name="questions">Debes contestar 8 preguntas sobre el FCB</string>
+    <string name="ready">¿Estas preparado?</string>
+    <string name="buttonActivityMain">Empezar</string>
+    <string name="question2">¿Como se llama el estadio del FCB?</string>
+    <string name="question3">¿Quien es este jugador?</string>
+    <string name="question1">¿Quién es el entrenador actual del FC Barcelona?</string>
+    <string name="question4">¿Que famoso jugador del FCB, paso a jugar con el Real Madrid en el 2000,
+        enfadando a los aficionados del FCB?</string>
+    <string name="question5">¿Como se llaman los aficionados del FCB?(2 respuestas correctas)</string>
+    <string name="question6">En Barcelona hay otro gran equipo de la Liga. ¿Cual es ese equipo?</string>
+    <string name="question7">¿Cual ha sido el fichaje mas caro de la historia del FCB?</string>
+    <string name="question8">¿Cual es el escudo del FCB?</string>
+    <string name="result1">Has contestado </string>
+    <string name="result2"> correctamente</string>
+    <string name="reset">Repetir</string>
+</resources>

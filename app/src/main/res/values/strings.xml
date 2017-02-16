@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FCB Quiz App</string>
+    <string name="welcome">Welcome to the FC Barcelona Quiz</string>
+    <string name="questions">You have to answer 8 questions about FCB</string>
+    <string name="ready">Are you ready?</string>
+    <string name="buttonActivityMain">Start</string>
+    <string name="buttonSubmit">Submit</string>
+    <string name="question2">What is the name of FCB stadium?</string>
+    <string name="question3">Who is this player?</string>
+    <string name="question1">Who is the actual coach of FC Barcelona?</string>
+    <string name="question4">what famous player of FCB started playing on Real Madrid on 2000, annoying
+    a lot the fans of FCB?</string>
+    <string name="question5">How are called the FCB fans?(2 correct answers)</string>
+    <string name="question6">In Barcelona there is another important team, his rival
+    in the local derby. Which is this team?</string>
+    <string name="question7">What has been the most expensive signing in the history of the FCB?</string>
+    <string name="question8">Which one is the shield of FCB?</string>
+    <string name="result1">You answered </string>
+    <string name="result2"> correctly</string>
+    <string name="reset">Reset</string>
+</resources>

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_questions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.daniel.quizapp.QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardViewQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            card_view:cardBackgroundColor="@color/colorCards"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/TextViewQuestion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/question1"
+                    android:textAlignment="center"
+                    android:textSize="28sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonAbelardo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonAbelardo"
+                            android:text="Abelardo" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonLuisEnrique"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonLuisEnrique"
+                            android:text="Luis Enrique" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonZidane"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonZidane"
+                            android:text="Zidane" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonGuardiola"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonGuardiola"
+                            android:text="Ronaldinho" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardViewQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            card_view:cardBackgroundColor="@color/colorCards"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/TextViewQuestion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/question2"
+                    android:textSize="28sp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/EditViewQuestion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TextViewQuestion2"
+                    android:background="@color/colorInput"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardViewQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            card_view:cardBackgroundColor="@color/colorCards"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/TextViewQuestion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/question3"
+                    android:textAlignment="center"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewRonaldinho"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/TextViewQuestion3"
+                    android:cropToPadding="false"
+                    android:scaleType="centerInside"
+                    card_view:srcCompat="@drawable/ronaldinho" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonRonaldo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentTop="false"
+                            android:onClick="radioButtonRonaldo"
+                            android:layout_weight="1"
+                            android:text="Ronaldo" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonRomário"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonRomario"
+                            android:text="Romário" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonEto"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonEto"
+                            android:text="Eto'o" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonRonaldinho"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonRonaldinho"
+                            android:text="Ronaldinho" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardViewQuestion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            card_view:cardBackgroundColor="@color/colorCards"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/TextViewQuestion4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/question4"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFigo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonFigo"
+                            android:text="Figo" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonRonaldinho4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonRonaldinho4"
+                            android:text="Ronaldinho" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonRonaldo4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonRonaldo4"
+                            android:text="Ronaldo" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonEto4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonEto4"
+                            android:text="Eto'o" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardViewQuestion5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            card_view:cardBackgroundColor="@color/colorCards"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/TextViewQuestion5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/question5"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <CheckBox
+                            android:text="Barcelonistas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkBoxBarcelonistas"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:text="Culés"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkBoxCules"
+                            android:layout_weight="1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <CheckBox
+                            android:text="Merengues"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkBoxMerengues"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:text="Pepineros"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/CheckBoxPepineros"
+                            android:layout_weight="1" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardViewQuestion6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            card_view:cardBackgroundColor="@color/colorCards"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/TextViewQuestion6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/question6"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonSporting"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonSporting"
+                            android:text="Sporting" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonAtletico"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="radioButtonAtletico"
+                            android:layout_weight="1"
+                            android:text="Atlético" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonEspañol"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonEspañol"
+                            android:text="Español" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonHercules"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonHercules"
+                            android:text="Hércules" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardViewQuestion7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            card_view:cardBackgroundColor="@color/colorCards"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/TextViewQuestion7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/question7"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonMessi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentTop="false"
+                            android:onClick="radioButtonMessi"
+                            android:layout_weight="1"
+                            android:text="Messi" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonSuarez"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonSuarez"
+                            android:text="Luis Suarez" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonIbrahimovic"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="radioButtonIbrahimovic"
+                            android:text="Ibrahimovic" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonIniesta"
+                            android:layout_width="0dp"
+                            android:onClick="radioButtonIniesta"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Iniesta" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardViewQuestion8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            card_view:cardBackgroundColor="@color/colorCards"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/TextViewQuestion8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/question8"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonSporting8"
+                            android:onClick="radioButtonSporting8"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:src="@drawable/sporting"
+                            android:layout_height="75dp"
+                            android:layout_width="0dp"
+                            android:onClick="radioButtonSporting8"
+                            android:id="@+id/ImageSporting"
+                            android:layout_weight="2" />
+
+                        <ImageView
+                            android:src="@drawable/villareal"
+                            android:onClick="radioButtonVillarreal"
+                            android:layout_height="75dp"
+                            android:layout_width="0dp"
+                            android:id="@+id/ImageVillarreal"
+                            android:layout_gravity="right"
+                            android:layout_weight="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonVillarreal"
+                            android:layout_width="0dp"
+                            android:onClick="radioButtonVillarreal"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:layout_weight="1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonMadrid"
+                            android:layout_width="0dp"
+                            android:onClick="radioButtonMadrid"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:src="@drawable/madrid"
+                            android:layout_height="75dp"
+                            android:onClick="radioButtonMadrid"
+                            android:layout_width="0dp"
+                            android:id="@+id/ImageMadrid"
+                            android:layout_weight="2" />
+
+                        <ImageView
+                            android:src="@drawable/barca"
+                            android:layout_height="75dp"
+                            android:layout_width="0dp"
+                            android:id="@+id/ImageBarca"
+                            android:layout_weight="2"
+                            android:onClick="radioButtonBcn" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonBcn"
+                            android:onClick="radioButtonBcn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:text="@string/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSubmit"
+            android:textSize="26dp"
+            android:onClick="buttonSubmit"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
