@@ -14,7 +14,31 @@ import static com.example.daniel.quizapp.R.string.question8;
 
 public class QuestionsActivity extends AppCompatActivity {
 
+    //Variables to know which option is marked
     int question1,question3,question4,question6,question7,question8;
+
+    //Variables to get the views of the buttons.
+    //Question1
+    RadioButton RBAbelardo, RBLuisEnrique,RBZidane,RBGuardiola;
+    //Question3
+    RadioButton RBRonaldo,RBRomario,RBEto,RBRonaldinho;
+    //Question4
+    RadioButton RBFigo,RBRonaldinho4,RBRonaldo4,RBEto4;
+    //Question6
+    RadioButton RBSporting,RBAtlettico,RBEspañol,RBHercules;
+    //Question7
+    RadioButton RBMessi,RBSuarez,RBIbrahimovic,RBIniesta;
+    //Question8
+    RadioButton RBSporting8,RBVillarreal,RBBcn,RBMadrid;
+    //Question2
+    TextView TV;
+    //Question5
+    CheckBox CB1;
+    CheckBox CB2;
+    CheckBox CB3;
+    CheckBox CB4;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +50,35 @@ public class QuestionsActivity extends AppCompatActivity {
         question6 = 0;
         question7 = 0;
         question8 = 0;
-
+        RBAbelardo = (RadioButton) findViewById(R.id.radioButtonAbelardo);
+        RBLuisEnrique = (RadioButton) findViewById(R.id.radioButtonLuisEnrique);
+        RBZidane = (RadioButton) findViewById(R.id.radioButtonZidane);
+        RBGuardiola = (RadioButton) findViewById(R.id.radioButtonGuardiola);
+        RBRonaldo = (RadioButton) findViewById(R.id.radioButtonRonaldo);
+        RBRomario = (RadioButton) findViewById(R.id.radioButtonRomário);
+        RBEto = (RadioButton) findViewById(R.id.radioButtonEto);
+        RBRonaldinho = (RadioButton) findViewById(R.id.radioButtonRonaldinho);
+        RBFigo = (RadioButton) findViewById(R.id.radioButtonFigo);
+        RBRonaldinho4 = (RadioButton) findViewById(R.id.radioButtonRonaldinho4);
+        RBRonaldo4 = (RadioButton) findViewById(R.id.radioButtonRonaldo4);
+        RBEto4 = (RadioButton) findViewById(R.id.radioButtonEto4);
+        RBSporting = (RadioButton) findViewById(R.id.radioButtonSporting);
+        RBAtlettico = (RadioButton) findViewById(R.id.radioButtonAtletico);
+        RBEspañol = (RadioButton) findViewById(R.id.radioButtonEspañol);
+        RBHercules = (RadioButton) findViewById(R.id.radioButtonHercules);
+        RBMessi = (RadioButton) findViewById(R.id.radioButtonMessi);
+        RBSuarez = (RadioButton) findViewById(R.id.radioButtonSuarez);
+        RBIbrahimovic = (RadioButton) findViewById(R.id.radioButtonIbrahimovic);
+        RBIniesta = (RadioButton) findViewById(R.id.radioButtonIniesta);
+        RBSporting8 = (RadioButton) findViewById(R.id.radioButtonSporting8);
+        RBVillarreal = (RadioButton) findViewById(R.id.radioButtonVillarreal);
+        RBMadrid = (RadioButton) findViewById(R.id.radioButtonMadrid);
+        RBBcn = (RadioButton) findViewById(R.id.radioButtonBcn);
+        TV = (TextView) findViewById(R.id.EditViewQuestion2);
+        CB1 = (CheckBox) findViewById(R.id.checkBoxBarcelonistas);
+        CB2 = (CheckBox) findViewById(R.id.checkBoxCules);
+        CB3 = (CheckBox) findViewById(R.id.checkBoxMerengues);
+        CB4 = (CheckBox) findViewById(R.id.CheckBoxPepineros);
     }
 
     /////////////////////////////////////////////QUESTION 1////////////////////////////////////////
@@ -34,20 +86,16 @@ public class QuestionsActivity extends AppCompatActivity {
     private void unfocusQuestion1(int x) {
         if(x!=0) {
             if(x == 1) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonAbelardo);
-                RB.setChecked(false);
+                RBAbelardo.setChecked(false);
             }
             else if (x == 2) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonLuisEnrique);
-                RB.setChecked(false);
+                RBLuisEnrique.setChecked(false);
             }
             else if (x == 3) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonZidane);
-                RB.setChecked(false);
+                RBZidane.setChecked(false);
             }
             else if (x == 4) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonGuardiola);
-                RB.setChecked(false);
+                RBGuardiola.setChecked(false);
             }
         }
     }
@@ -59,8 +107,7 @@ public class QuestionsActivity extends AppCompatActivity {
     //abelardo is number 1
     public void radioButtonAbelardo(View view) {
         if (question1 != 1) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonAbelardo);
-            RB.setChecked(true);
+            RBAbelardo.setChecked(true);
             unfocusQuestion1(question1);
             question1 = 1;
         }
@@ -73,8 +120,7 @@ public class QuestionsActivity extends AppCompatActivity {
     //Luis Enrique is number 2
     public void radioButtonLuisEnrique(View view) {
         if (question1 != 2) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonLuisEnrique);
-            RB.setChecked(true);
+            RBLuisEnrique.setChecked(true);
             unfocusQuestion1(question1);
             question1 = 2;
         }
@@ -87,8 +133,7 @@ public class QuestionsActivity extends AppCompatActivity {
     //Zidane is number 3
     public void radioButtonZidane(View view) {
         if (question1 != 3) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonZidane);
-            RB.setChecked(true);
+            RBZidane.setChecked(true);
             unfocusQuestion1(question1);
             question1 = 3;
         }
@@ -102,8 +147,7 @@ public class QuestionsActivity extends AppCompatActivity {
     //Guardiola is number 4
     public void radioButtonGuardiola(View view) {
         if (question1 != 4) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonGuardiola);
-            RB.setChecked(true);
+            RBGuardiola.setChecked(true);
             unfocusQuestion1(question1);
             question1 = 4;
         }
@@ -115,20 +159,16 @@ public class QuestionsActivity extends AppCompatActivity {
     private void unfocusQuestion3(int x) {
         if(x!=0) {
             if(x == 1) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRonaldo);
-                RB.setChecked(false);
+                RBRonaldo.setChecked(false);
             }
             else if (x == 2) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRomário);
-                RB.setChecked(false);
+                RBRomario.setChecked(false);
             }
             else if (x == 3) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonEto);
-                RB.setChecked(false);
+                RBEto.setChecked(false);
             }
             else if (x == 4) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRonaldinho);
-                RB.setChecked(false);
+                RBRonaldinho.setChecked(false);
             }
         }
     }
@@ -139,8 +179,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonRonaldo(View view) {
         if (question3 != 1) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRonaldo);
-            RB.setChecked(true);
+            RBRonaldo.setChecked(true);
             unfocusQuestion3(question3);
             question3 = 1;
         }
@@ -152,8 +191,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonRomario(View view) {
         if (question3 != 2) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRomário);
-            RB.setChecked(true);
+            RBRomario.setChecked(true);
             unfocusQuestion3(question3);
             question3 = 2;
         }
@@ -165,8 +203,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonEto(View view) {
         if (question3 != 3) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonEto);
-            RB.setChecked(true);
+            RBEto.setChecked(true);
             unfocusQuestion3(question3);
             question3 = 3;
         }
@@ -179,8 +216,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonRonaldinho(View view) {
         if (question3 != 4) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRonaldinho);
-            RB.setChecked(true);
+            RBRonaldinho.setChecked(true);
             unfocusQuestion3(question3);
             question3 = 4;
         }
@@ -192,20 +228,16 @@ public class QuestionsActivity extends AppCompatActivity {
     private void unfocusQuestion4(int x) {
         if(x!=0) {
             if(x == 1) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonFigo);
-                RB.setChecked(false);
+                RBFigo.setChecked(false);
             }
             else if (x == 2) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRonaldinho4);
-                RB.setChecked(false);
+                RBRonaldinho4.setChecked(false);
             }
             else if (x == 3) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRonaldo4);
-                RB.setChecked(false);
+                RBRonaldo4.setChecked(false);
             }
             else if (x == 4) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonEto4);
-                RB.setChecked(false);
+                RBEto4.setChecked(false);
             }
         }
     }
@@ -216,8 +248,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonFigo(View view) {
         if (question4 != 1) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonFigo);
-            RB.setChecked(true);
+            RBFigo.setChecked(true);
             unfocusQuestion4(question4);
             question4 = 1;
         }
@@ -229,8 +260,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonRonaldinho4(View view) {
         if (question4 != 2) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRonaldinho4);
-            RB.setChecked(true);
+            RBRonaldinho4.setChecked(true);
             unfocusQuestion4(question4);
             question4 = 2;
         }
@@ -242,8 +272,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonRonaldo4(View view) {
         if (question4 != 3) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonRonaldo4);
-            RB.setChecked(true);
+            RBRonaldo4.setChecked(true);
             unfocusQuestion4(question4);
             question4 = 3;
         }
@@ -256,8 +285,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonEto4(View view) {
         if (question4 != 4) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonEto4);
-            RB.setChecked(true);
+            RBEto4.setChecked(true);
             unfocusQuestion4(question4);
             question4 = 4;
         }
@@ -269,20 +297,16 @@ public class QuestionsActivity extends AppCompatActivity {
     private void unfocusQuestion6(int x) {
         if(x!=0) {
             if(x == 1) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonSporting);
-                RB.setChecked(false);
+                RBSporting.setChecked(false);
             }
             else if (x == 2) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonAtletico);
-                RB.setChecked(false);
+                RBAtlettico.setChecked(false);
             }
             else if (x == 3) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonEspañol);
-                RB.setChecked(false);
+                RBEspañol.setChecked(false);
             }
             else if (x == 4) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonHercules);
-                RB.setChecked(false);
+                RBHercules.setChecked(false);
             }
         }
     }
@@ -293,8 +317,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonSporting(View view) {
         if (question6 != 1) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonSporting);
-            RB.setChecked(true);
+            RBSporting.setChecked(true);
             unfocusQuestion6(question6);
             question6 = 1;
         }
@@ -306,8 +329,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonAtletico(View view) {
         if (question6 != 2) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonAtletico);
-            RB.setChecked(true);
+            RBAtlettico.setChecked(true);
             unfocusQuestion6(question6);
             question6 = 2;
         }
@@ -319,8 +341,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonEspañol(View view) {
         if (question6 != 3) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonEspañol);
-            RB.setChecked(true);
+            RBEspañol.setChecked(true);
             unfocusQuestion6(question6);
             question6 = 3;
         }
@@ -333,8 +354,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonHercules(View view) {
         if (question6 != 4) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonHercules);
-            RB.setChecked(true);
+            RBHercules.setChecked(true);
             unfocusQuestion6(question6);
             question6 = 4;
         }
@@ -346,20 +366,16 @@ public class QuestionsActivity extends AppCompatActivity {
     private void unfocusQuestion7(int x) {
         if(x!=0) {
             if(x == 1) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonMessi);
-                RB.setChecked(false);
+                RBMessi.setChecked(false);
             }
             else if (x == 2) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonSuarez);
-                RB.setChecked(false);
+                RBSuarez.setChecked(false);
             }
             else if (x == 3) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonIbrahimovic);
-                RB.setChecked(false);
+                RBIbrahimovic.setChecked(false);
             }
             else if (x == 4) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonIniesta);
-                RB.setChecked(false);
+                RBIniesta.setChecked(false);
             }
         }
     }
@@ -370,8 +386,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonMessi(View view) {
         if (question7 != 1) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonMessi);
-            RB.setChecked(true);
+            RBMessi.setChecked(true);
             unfocusQuestion7(question7);
             question7 = 1;
         }
@@ -383,8 +398,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonSuarez(View view) {
         if (question7 != 2) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonSuarez);
-            RB.setChecked(true);
+            RBSuarez.setChecked(true);
             unfocusQuestion7(question7);
             question7 = 2;
         }
@@ -396,8 +410,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonIbrahimovic(View view) {
         if (question7 != 3) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonIbrahimovic);
-            RB.setChecked(true);
+            RBIbrahimovic.setChecked(true);
             unfocusQuestion7(question7);
             question7 = 3;
         }
@@ -410,8 +423,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonIniesta(View view) {
         if (question7 != 4) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonIniesta);
-            RB.setChecked(true);
+            RBIniesta.setChecked(true);
             unfocusQuestion7(question7);
             question7 = 4;
         }
@@ -423,20 +435,16 @@ public class QuestionsActivity extends AppCompatActivity {
     private void unfocusQuestion8(int x) {
         if(x!=0) {
             if(x == 1) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonSporting8);
-                RB.setChecked(false);
+                RBSporting8.setChecked(false);
             }
             else if (x == 2) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonVillarreal);
-                RB.setChecked(false);
+                RBVillarreal.setChecked(false);
             }
             else if (x == 3) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonMadrid);
-                RB.setChecked(false);
+                RBMadrid.setChecked(false);
             }
             else if (x == 4) {
-                RadioButton RB = (RadioButton) findViewById(R.id.radioButtonBcn);
-                RB.setChecked(false);
+                RBBcn.setChecked(false);
             }
         }
     }
@@ -447,8 +455,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonSporting8(View view) {
         if (question8 != 1) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonSporting8);
-            RB.setChecked(true);
+            RBSporting8.setChecked(true);
             unfocusQuestion8(question8);
             question8 = 1;
         }
@@ -460,8 +467,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonVillarreal(View view) {
         if (question8 != 2) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonVillarreal);
-            RB.setChecked(true);
+            RBVillarreal.setChecked(true);
             unfocusQuestion8(question8);
             question8 = 2;
         }
@@ -473,8 +479,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonMadrid(View view) {
         if (question8 != 3) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonMadrid);
-            RB.setChecked(true);
+            RBMadrid.setChecked(true);
             unfocusQuestion8(question8);
             question8 = 3;
         }
@@ -487,8 +492,7 @@ public class QuestionsActivity extends AppCompatActivity {
      */
     public void radioButtonBcn(View view) {
         if (question8 != 4) {
-            RadioButton RB = (RadioButton) findViewById(R.id.radioButtonBcn);
-            RB.setChecked(true);
+            RBBcn.setChecked(true);
             unfocusQuestion8(question8);
             question8 = 4;
         }
@@ -505,16 +509,11 @@ public class QuestionsActivity extends AppCompatActivity {
         if(question8 == 4) ++result;
 
 
-        TextView TV = (TextView) findViewById(R.id.EditViewQuestion2);
         String TVText = TV.getText().toString();
 
 
         if(TVText.equalsIgnoreCase("camp nou")) ++result;
 
-        CheckBox CB1 = (CheckBox) findViewById(R.id.checkBoxBarcelonistas);
-        CheckBox CB2 = (CheckBox) findViewById(R.id.checkBoxCules);
-        CheckBox CB3 = (CheckBox) findViewById(R.id.checkBoxMerengues);
-        CheckBox CB4 = (CheckBox) findViewById(R.id.CheckBoxPepineros);
         if (CB3.isChecked() || CB4.isChecked()) {
             if(CB1.isChecked() && CB2.isChecked()) {
                 Log.d("hola","aficion correcta");
